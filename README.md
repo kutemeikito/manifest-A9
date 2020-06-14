@@ -47,7 +47,7 @@ To get started with the building process, you'll need to get familiar with [Git 
 # Then to sync up:- 
 
 ```bash
- $ repo sync --current-branch --no-tags --no-clone-bundle --optimized-fetch --force-broken --force-sync -j8
+ $ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
 # Start the build:-
